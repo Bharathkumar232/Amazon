@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign-In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 350px;
+            padding: 20px 0;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            width: 100px;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        .login-box {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .login-box h1 {
+            margin-bottom: 20px;
+            color: #222;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #222;
+            font-size: 13px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .form-group input:focus {
+            border-color: #e77600;
+            outline: none;
+            box-shadow: 0 0 3px rgba(228, 121, 17, 0.5);
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 8px;
+            background-color: #f3b414;
+            border: 1px solid #e1a102;
+            border-radius: 4px;
+            color: #222;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #e1a102;
+        }
+
+        .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+            margin: 0 10px;
+        }
+
+        .create-account {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+            color: #222;
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
+
+        .create-account:hover {
+            background-color: #ddd;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #0066c0;
+        }
+
+        .links a {
+            color: #0066c0;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./amazon logo.jpg" alt="Amazon Logo">
+        </div>
+        <div class="login-box">
+            <h1>Sign-In</h1>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email or mobile phone number</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button type="submit" class="login-button">Continue</button>
+            </form>
+        </div>
+        <div class="separator">
+            <span>or</span>
+        </div>
+        <button class="create-account">Create your Amazon account</button>
+        <div class="links">
+            <a href="#">Forgot your password?</a>
+        </div>
+    </div>
+</body>
+</html>
